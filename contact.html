@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - YouTube Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">My YouTube Portfolio</h1>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p>I'd love to hear from you! Whether you have questions, collaboration ideas, or just want to say hello.</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-section">
+                        <h3>Send Me a Message</h3>
+                        <!-- REQUIRED ELEMENTS AND ATTRIBUTES -->
+                        <!-- 
+                        REQUIRED ELEMENTS:
+                        1. <form> - Creates a form container for user input. Used here to collect contact information from visitors.
+                           LOCATION: Line 50 - <form class="contact-form" action="#" method="post" autocomplete="on" lang="en">
+                        2. <text> - Text input element (type="text"). Used for the name field to allow users to enter their full name.
+                           LOCATION: Line 54 - <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your full name">
+                        3. <email> - Email input element (type="email"). Used for the email field with built-in email validation.
+                           LOCATION: Line 60 - <input type="email" id="email" name="email" required autocomplete="email" placeholder="your.email@example.com">
+                        
+                        REQUIRED ATTRIBUTES:
+                        1. autocomplete - Helps browsers suggest previously entered values. Set to "on" for the form and "name"/"email" for specific fields.
+                           LOCATION: Line 50 (form) - autocomplete="on"
+                           LOCATION: Line 54 (name field) - autocomplete="name"
+                           LOCATION: Line 60 (email field) - autocomplete="email"
+                        2. lang - Specifies the language of the form content. Set to "en" for English to help screen readers and browsers.
+                           LOCATION: Line 50 - lang="en"
+                        3. required - Makes form fields mandatory before submission. Applied to name, email, and message fields.
+                           LOCATION: Line 54 (name field) - required
+                           LOCATION: Line 60 (email field) - required
+                           LOCATION: Line 70 (message field) - required
+                        -->
+                        <form class="contact-form" action="#" method="post" autocomplete="on" lang="en">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <!-- Using 'text' element and 'required' attribute -->
+                                <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your full name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <!-- Using 'email' element and 'required' attribute -->
+                                <input type="email" id="email" name="email" required autocomplete="email" placeholder="your.email@example.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" autocomplete="off" placeholder="What's this about?">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" required autocomplete="off" placeholder="Tell me what's on your mind..." rows="6"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="category">Category</label>
+                                <select id="category" name="category">
+                                    <option value="">Select a category</option>
+                                    <option value="collaboration">Collaboration</option>
+                                    <option value="question">Question</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="business">Business Inquiry</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="contact-info-section">
+                        <h3>Other Ways to Reach Me</h3>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <h4>📧 Email</h4>
+                                <p>austen.bernal.250@my.csun.edu</p>
+                                <small>I typically respond within 24 hours</small>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <h4>📱 Social Media</h4>
+                                <div class="social-contact">
+                                    <a href="http://www.youtube.com/@AustenBernalFilms" class="social-contact-link" target="_blank">YouTube Channel</a>
+                                    <a href="https://instagram.com/austenbernalfilms" class="social-contact-link" target="_blank">Instagram</a>
+                                    <a href="https://x.com/bernal_austen" class="social-contact-link" target="_blank">Twitter</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <h4>💼 Business Inquiries</h4>
+                                <p>business@myyoutubechannel.com</p>
+                                <small>For partnerships and collaborations</small>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Section -->
+                        <div class="faq-section">
+                            <h3>Frequently Asked Questions</h3>
+                            <div class="faq-item">
+                                <h4>How often do you upload videos?</h4>
+                                <p>I aim to upload new content every week, typically on Fridays. Sometimes I'll have bonus content during special events or collaborations.</p>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <h4>Do you accept collaboration requests?</h4>
+                                <p>Yes! I'm always open to collaborating with other creators. Please use the contact form above and select "Collaboration" as the category.</p>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <h4>Can I suggest video topics?</h4>
+                                <p>Absolutely! I love hearing from my audience about what content they'd like to see. Use the contact form and let me know your ideas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Contact Section -->
+        <section class="additional-contact">
+            <div class="container">
+                <h2>Let's Connect</h2>
+                <div class="connection-options">
+                    <div class="connection-card">
+                        <h3>🎥 Content Collaboration</h3>
+                        <p>Interested in working together on video content? Let's discuss ideas and create something amazing!</p>
+                        <a href="#" class="connection-link">Start Collaboration</a>
+                    </div>
+                    
+                    <div class="connection-card">
+                        <h3>📚 Educational Content</h3>
+                        <p>Have a topic you'd like me to cover in a tutorial? I'm always looking for new educational content ideas.</p>
+                        <a href="#" class="connection-link">Suggest Topic</a>
+                    </div>
+                    
+                    <div class="connection-card">
+                        <h3>💬 Community</h3>
+                        <p>Join our growing community of creators and learners. Share your projects and get feedback!</p>
+                        <a href="#" class="connection-link">Join Community</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 My YouTube Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="http://www.youtube.com/@AustenBernalFilms" class="social-link" target="_blank">YouTube</a>
+                <a href="https://instagram.com/austenbernalfilms" class="social-link" target="_blank">Instagram</a>
+                <a href="https://x.com/bernal_austen" class="social-link" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple form validation and interaction
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('.contact-form');
+            
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                const formData = new FormData(form);
+                const name = formData.get('name');
+                const email = formData.get('email');
+                const message = formData.get('message');
+                
+                // Simple validation
+                if (name && email && message) {
+                    alert('Thank you for your message! I\'ll get back to you soon.');
+                    form.reset();
+                } else {
+                    alert('Please fill in all required fields.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

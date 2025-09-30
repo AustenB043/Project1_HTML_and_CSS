@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos - YouTube Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">My YouTube Portfolio</h1>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="videos.html" class="active">Videos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="videos-hero">
+            <div class="container">
+                <h2>My Video Collection</h2>
+                <p>Explore my diverse range of content from tutorials to vlogs</p>
+            </div>
+        </section>
+
+        <section class="video-categories">
+            <div class="container">
+                <div class="category-tabs">
+                    <button class="tab-button active" data-category="all">All Videos</button>
+                    <button class="tab-button" data-category="short-films">Short Films</button>
+                    <button class="tab-button" data-category="music-videos">Music Videos</button>
+                    <button class="tab-button" data-category="gaming">Gaming</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="videos-grid">
+            <div class="container">
+                <!-- Short Films -->
+                <div class="video-item" data-category="short-films">
+                    <div class="video-thumbnail">
+                        <a href="https://youtu.be/GigRM2PQHHw?si=of77eQ839NwCt6YN" target="_blank">
+                            <img src="https://img.youtube.com/vi/GigRM2PQHHw/maxresdefault.jpg" alt="HTML Basics Tutorial">
+                            <div class="play-overlay">
+                                <span class="play-icon">▶</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <h3>Siren Head Horror Short Film</h3>
+                        <p>A horror short film with a twist about a siren head.</p>
+                        <div class="video-meta">
+                            <span class="duration">6:58</span>
+                            <span class="views">169K views</span>
+                            <span class="date">5 years ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-item" data-category="short-films">
+                    <div class="video-thumbnail">
+                        <a href="https://youtu.be/CJ45vvV6Nm8?si=BktUwz7BSlHkq5qB" target="_blank">
+                            <img src="https://img.youtube.com/vi/CJ45vvV6Nm8/maxresdefault.jpg" alt="CSS Styling Tutorial">
+                            <div class="play-overlay">
+                                <span class="play-icon">▶</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <h3>The Fight</h3>
+                        <p>A short film sequel to the squad fight series.</p>
+                        <div class="video-meta">
+                            <span class="duration">3:29</span>
+                            <span class="views">510 views</span>
+                            <span class="date">8 years ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Music Videos -->
+                <div class="video-item" data-category="music-videos">
+                    <div class="video-thumbnail">
+                        <a href="https://youtu.be/-DxyvSFTS5w?si=CakFVPFMN8QfnhzS" target="_blank">
+                            <img src="https://img.youtube.com/vi/-DxyvSFTS5w/maxresdefault.jpg" alt="Travel Vlog">
+                            <div class="play-overlay">
+                                <span class="play-icon">▶</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <h3>Mineshop Parody</h3>
+                        <p>A music video parody of the song "Thrift Shop."</p>
+                        <div class="video-meta">
+                            <span class="duration">3:59</span>
+                            <span class="views">1.7M views</span>
+                            <span class="date">12 years ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-item" data-category="music-videos">
+                    <div class="video-thumbnail">
+                        <a href="https://youtu.be/aVcJijF32wI?si=ufgqoLZD_z1E0POq" target="_blank">
+                            <img src="https://img.youtube.com/vi/aVcJijF32wI/maxresdefault.jpg" alt="Daily Vlog">
+                            <div class="play-overlay">
+                                <span class="play-icon">▶</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <h3>PSY Gentleman Parody - I Am Freaking Slender Man</h3>
+                        <p>A music video parody of the song "Gentleman."</p>
+                        <div class="video-meta">
+                            <span class="duration">4:53</span>
+                            <span class="views">71K views</span>
+                            <span class="date">12 years ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gaming Videos -->
+                <div class="video-item" data-category="gaming">
+                    <div class="video-thumbnail">
+                        <a href="https://www.youtube.com/shorts/5MUmLC9YMII" target="_blank">
+                            <img src="https://img.youtube.com/vi/5MUmLC9YMII/maxresdefault.jpg" alt="Tech Review">
+                            <div class="play-overlay">
+                                <span class="play-icon">▶</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <h3>Let Him Cook</h3>
+                        <p>A clip from the game Elden Ring.</p>
+                        <div class="video-meta">
+                            <span class="duration">0:40</span>
+                            <span class="views">1.1K views</span>
+                            <span class="date">3 months ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-item" data-category="gaming">
+                    <div class="video-thumbnail">
+                        <a href="https://www.youtube.com/shorts/ssWP2Hef-YY" target="_blank">
+                            <img src="https://img.youtube.com/vi/ssWP2Hef-YY/maxresdefault.jpg" alt="Camera Review">
+                            <div class="play-overlay">
+                                <span class="play-icon">▶</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <h3>We Ride Together We Die Together</h3>
+                        <p>A clip from the game Elden Ring.</p>
+                        <div class="video-meta">
+                            <span class="duration">0:20</span>
+                            <span class="views">2.4K views</span>
+                            <span class="date">3 months ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Gaming Videos -->
+                <div class="video-item" data-category="gaming">
+                    <div class="video-thumbnail">
+                        <a href="https://www.youtube.com/shorts/7f8G3LA_2rQ" target="_blank">
+                            <img src="https://img.youtube.com/vi/7f8G3LA_2rQ/maxresdefault.jpg" alt="JavaScript Introduction">
+                            <div class="play-overlay">
+                                <span class="play-icon">▶</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <h3>When you get so close to killing a Night Lord in Elden Ring</h3>
+                        <p>A clip from the game Elden Ring when you get so close to killing a Night Lord.</p>
+                        <div class="video-meta">
+                            <span class="duration">0:35</span>
+                            <span class="views">2.0K views</span>
+                            <span class="date">3 months ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-item" data-category="gaming">
+                    <div class="video-thumbnail">
+                        <a href="https://youtube.com/live/x_FmxaVyfBA?feature=share" target="_blank">
+                            <img src="https://img.youtube.com/vi/x_FmxaVyfBA/maxresdefault.jpg" alt="Video Editing Tutorial">
+                            <div class="play-overlay">
+                                <span class="play-icon">▶</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="video-info">
+                        <h3>Elden Ring Live Stream</h3>
+                        <p>A live stream of me playing the game Elden Ring.</p>
+                        <div class="video-meta">
+                            <span class="duration">2:48:43</span>
+                            <span class="views">30 views</span>
+                            <span class="date">1 year ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 My YouTube Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">YouTube</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for category filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const videoItems = document.querySelectorAll('.video-item');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    
+                    // Update active tab
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter videos
+                    videoItems.forEach(item => {
+                        if (category === 'all' || item.getAttribute('data-category') === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
